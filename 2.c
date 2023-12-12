@@ -10,14 +10,15 @@ int main()
     int temp = 0;
     int Sum = 0;
     srand(time(NULL));
-    // COUNT = rand()%10 + 1;s
     int array[COUNT] = { 0 }; 
+
+
     for (int idx = 0; idx < COUNT; idx++)
     {
         array[idx] = rand()%10 + 1;
     }
-   
-    for (int idx = 0; idx < COUNT - 1; idx++)
+#if 0
+    for (int idx = 0; idx < COUNT - 1; idx++)     //冒泡排序
     {
         for (int jdx = 0; jdx < COUNT - 1 - idx; jdx++)
         {
@@ -36,6 +37,7 @@ int main()
     {
         printf(" %d\n", array[idx]);
     }
-         
+#endif
+    
     return 0;
 }
